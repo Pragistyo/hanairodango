@@ -1,1 +1,303 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <!-- =================================================================== -->
+    <!-- [CONFIG / HEAD]                                                     -->
+    <!-- Meta tags, Google Fonts, & Tailwind CSS Configuration               -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANAIRO — A Lifestyle by the Beauty of Changing Season</title>
+    <meta name="description" content="HANAIRO is an Indonesian lifestyle brand inspired by the beauty of changing seasons, Japanese aesthetics, and daily creative expressions.">
+
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Styling & Color Palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hanairo: {
+                            base: '#FDFBF7',      /* Warm Paper / Off-white */
+                            surface: '#F6F3EC',   /* Light Warm Cream */
+                            main: '#2B2825',      /* Soft Charcoal */
+                            muted: '#736E67',     /* Muted Earth Slate */
+                            border: '#E8E3D9',    /* Subtle Neutral Border */
+                            rose: '#D4A396',      /* Soft Dusty Rose / Sakura */
+                            sage: '#A3B19B',      /* Muted Sage Green */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #2B2825;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="selection:bg-hanairo-rose/30">
+
+    <!-- =================================================================== -->
+    <!-- [COMPONENT 01] NAVBAR & NAVIGATION                                 -->
+    <!-- Description: Header navigation bar with brand logo & links          -->
+    <!-- =================================================================== -->
+    <header class="sticky top-0 z-50 bg-hanairo-base/90 backdrop-blur-md border-b border-hanairo-border/60 transition-all">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="font-serif text-2xl tracking-[0.2em] font-semibold text-hanairo-main hover:opacity-80 transition-opacity">
+                HANAIRO
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="hidden md:flex items-center space-x-10 text-sm tracking-wider font-light text-hanairo-muted">
+                <a href="#about" class="hover:text-hanairo-main transition-colors">ABOUT</a>
+                <a href="#essence" class="hover:text-hanairo-main transition-colors">PHILOSOPHY</a>
+                <a href="#collection" class="hover:text-hanairo-main transition-colors">COLLECTION</a>
+                <a href="#contact" class="hover:text-hanairo-main transition-colors">CONTACT</a>
+            </nav>
+
+            <!-- Status Indicator -->
+            <div class="hidden sm:flex items-center space-x-2 text-xs font-mono text-hanairo-muted bg-hanairo-surface px-3 py-1.5 rounded-full border border-hanairo-border">
+                <span class="w-2 h-2 rounded-full bg-hanairo-sage animate-pulse"></span>
+                <span>INDONESIA</span>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =================================================================== -->
+    <!-- [COMPONENT 02] HERO SECTION                                         -->
+    <!-- Description: Editorial style intro banner                           -->
+    <!-- =================================================================== -->
+    <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 px-6 overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <!-- Season Tag -->
+            <p class="text-xs font-mono tracking-[0.25em] text-hanairo-muted uppercase mb-6">
+                — A Lifestyle Inspired by Nature
+            </p>
+
+            <!-- Main Headline (Editorial Typography) -->
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.25] text-hanairo-main mb-8 max-w-3xl">
+                Every moment has its own color, shaped by the beauty of changing seasons.
+            </h1>
+
+            <!-- Instagram First Post Quote -->
+            <p class="text-base sm:text-lg text-hanairo-muted font-light leading-relaxed max-w-2xl mb-12">
+                HANAIRO is a lifestyle brand born in Indonesia, inspired by Japanese aesthetic simplicity. We believe in embracing individuality, creativity, and the subtle joys in everyday life.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                <a href="#collection" class="inline-flex items-center justify-center px-8 py-4 bg-hanairo-main text-hanairo-base text-sm tracking-widest hover:bg-hanairo-muted transition-colors rounded-none">
+                    EXPLORE COLLECTION
+                </a>
+                <a href="#about" class="inline-flex items-center justify-center px-8 py-4 border border-hanairo-main text-hanairo-main text-sm tracking-widest hover:bg-hanairo-surface transition-colors rounded-none">
+                    OUR STORY
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================================================================== -->
+    <!-- [COMPONENT 03] BRAND STORY / ABOUT                                  -->
+    <!-- Description: Latar belakang brand HANAIRO                           -->
+    <!-- =================================================================== -->
+    <section id="about" class="py-20 md:py-32 bg-hanairo-surface border-y border-hanairo-border px-6">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            
+            <div class="md:col-span-5">
+                <span class="text-xs font-mono tracking-widest text-hanairo-muted uppercase block mb-3">01. ABOUT US</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-hanairo-main font-normal leading-tight">
+                    Blend of Indonesian Spirit & Japanese Aesthetic
+                </h2>
+            </h2>
+            </div>
+
+            <div class="md:col-span-7 space-y-6 text-hanairo-muted text-sm md:text-base leading-relaxed font-light">
+                <p>
+                    HANAIRO hadir sebagai perwujudan gaya hidup yang mengapresiasi keindahan momen sederhana. Terinspirasi dari filosofi Jepang tentang pergantian musim (*changing seasons*), setiap warna dan desain yang kami hadirkan mencerminkan rasa syukur atas ruang dan waktu.
+                </p>
+                <p>
+                    Sebagai brand asal Indonesia, kami memadukan fungsionalitas produk harian dengan estetika yang tenang (*zen*), bersih, dan bermakna. Kami memulai langkah pertama kami lewat koleksi *apparel* yang terkurasi.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =================================================================== -->
+    <!-- [COMPONENT 04] BRAND ESSENCE (3 PILARS)                             -->
+    <!-- Description: 3 pilar nilai utama HANAIRO                            -->
+    <!-- =================================================================== -->
+    <section id="essence" class="py-20 md:py-32 px-6">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="mb-16">
+                <span class="text-xs font-mono tracking-widest text-hanairo-muted uppercase block mb-3">02. PHILOSOPHY</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-hanairo-main font-normal">Our Brand Essence</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                
+                <!-- Pilar 1 -->
+                <div class="border-t border-hanairo-border pt-8">
+                    <span class="font-mono text-xs text-hanairo-rose block mb-4">🌿 ESSENCE 01</span>
+                    <h3 class="font-serif text-xl text-hanairo-main mb-3">Nature Inspired</h3>
+                    <p class="text-sm text-hanairo-muted font-light leading-relaxed">
+                        Terinspirasi dari elemen alam, transisi warna musim, dan kehangatan material yang memberikan rasa tenang dalam keseharian.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="border-t border-hanairo-border pt-8">
+                    <span class="font-mono text-xs text-hanairo-sage block mb-4">✨ ESSENCE 02</span>
+                    <h3 class="font-serif text-xl text-hanairo-main mb-3">Positive Lifestyle</h3>
+                    <p class="text-sm text-hanairo-muted font-light leading-relaxed">
+                        Mendukung gaya hidup positif yang merayakan keunikan individu (*individuality*) serta keceriaan kecil di setiap momen.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="border-t border-hanairo-border pt-8">
+                    <span class="font-mono text-xs text-hanairo-muted block mb-4">🎨 ESSENCE 03</span>
+                    <h3 class="font-serif text-xl text-hanairo-main mb-3">Creative Expression</h3>
+                    <p class="text-sm text-hanairo-muted font-light leading-relaxed">
+                        Wadah ekspresi kreatif tanpa batas—dimulai dari pakaian harian hingga berbagai ragam produk gaya hidup mendatangkan nilai estetika.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================================================================== -->
+    <!-- [COMPONENT 05] APPAREL PREVIEW / LOOKBOOK                           -->
+    <!-- Description: Preview produk utama (Apparel)                         -->
+    <!-- =================================================================== -->
+    <section id="collection" class="py-20 md:py-32 bg-hanairo-surface border-t border-hanairo-border px-6">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-4">
+                <div>
+                    <span class="text-xs font-mono tracking-widest text-hanairo-muted uppercase block mb-3">03. CURATED PRODUCTS</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-hanairo-main font-normal">Apparel Collection</h2>
+                </div>
+                <p class="text-xs font-mono text-hanairo-muted uppercase tracking-wider">
+                    [ FIRST DROP: COMING SOON ]
+                </p>
+            </div>
+
+            <!-- Grid Preview Product Placeholders -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                
+                <!-- Product Card 1 -->
+                <div class="group">
+                    <div class="aspect-[3/4] bg-hanairo-base border border-hanairo-border flex flex-col items-center justify-center p-6 mb-4 transition-transform duration-300 group-hover:-translate-y-1">
+                        <span class="font-serif text-2xl text-hanairo-border group-hover:text-hanairo-rose transition-colors">HANAIRO</span>
+                        <span class="text-xs font-mono text-hanairo-muted mt-2">Essential Tee — Season 01</span>
+                    </div>
+                    <h3 class="text-sm font-medium text-hanairo-main">Minimalist Graphic Tee</h3>
+                    <p class="text-xs text-hanairo-muted font-light mt-1">Cotton Heavyweight / Nature Palette</p>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group">
+                    <div class="aspect-[3/4] bg-hanairo-base border border-hanairo-border flex flex-col items-center justify-center p-6 mb-4 transition-transform duration-300 group-hover:-translate-y-1">
+                        <span class="font-serif text-2xl text-hanairo-border group-hover:text-hanairo-sage transition-colors">HANAIRO</span>
+                        <span class="text-xs font-mono text-hanairo-muted mt-2">Outerwear — Season 01</span>
+                    </div>
+                    <h3 class="text-sm font-medium text-hanairo-main">Relaxed Fit Overshirt</h3>
+                    <p class="text-xs text-hanairo-muted font-light mt-1">Japanese Style Cut / Neutral Tone</p>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group">
+                    <div class="aspect-[3/4] bg-hanairo-base border border-hanairo-border flex flex-col items-center justify-center p-6 mb-4 transition-transform duration-300 group-hover:-translate-y-1">
+                        <span class="font-serif text-2xl text-hanairo-border group-hover:text-hanairo-muted transition-colors">HANAIRO</span>
+                        <span class="text-xs font-mono text-hanairo-muted mt-2">Lifestyle Goods</span>
+                    </div>
+                    <h3 class="text-sm font-medium text-hanairo-main">Everyday Tote Bag</h3>
+                    <p class="text-xs text-hanairo-muted font-light mt-1">Canvas & Embroidery Accent</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================================================================== -->
+    <!-- [COMPONENT 06] CONTACT & FOOTER                                     -->
+    <!-- Description: Informasi kontak placeholder dan footer                -->
+    <!-- =================================================================== -->
+    <footer id="contact" class="pt-20 pb-12 bg-hanairo-main text-hanairo-base px-6">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-hanairo-muted/40">
+                
+                <!-- Left: Headline Footer -->
+                <div class="md:col-span-6 space-y-4">
+                    <span class="font-serif text-3xl tracking-[0.2em] block">HANAIRO</span>
+                    <p class="text-sm text-hanairo-surface/70 font-light max-w-sm leading-relaxed">
+                        Embracing individuality, creativity, and the little joys in everyday life.
+                    </p>
+                </div>
+
+                <!-- Right: Contact Placeholders -->
+                <div class="md:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm font-light">
+                    
+                    <div>
+                        <span class="text-xs font-mono text-hanairo-surface/50 uppercase tracking-wider block mb-3">GET IN TOUCH</span>
+                        <ul class="space-y-2 text-hanairo-surface/80">
+                            <li>Email: <span class="font-mono text-xs">contact@XXX.com</span></li>
+                            <li>WhatsApp: <span class="font-mono text-xs">+62 8XX-XXXX-XXXX</span></li>
+                            <li>Location: Indonesia</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="text-xs font-mono text-hanairo-surface/50 uppercase tracking-wider block mb-3">SOCIAL MEDIA</span>
+                        <ul class="space-y-2 text-hanairo-surface/80">
+                            <li>
+                                <a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-hanairo-rose transition-colors">
+                                    Instagram: @hanairo.XXX
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-hanairo-surface/50 gap-4">
+                <p>&copy; 2026 HANAIRO. All rights reserved.</p>
+                <p>Designed for simplicity & everyday joy.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
 
